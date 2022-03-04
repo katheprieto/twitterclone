@@ -1,0 +1,51 @@
+{% extends "base.html" %} {% block content %} {% load static %}
+
+<section class="content">
+  <div class="main-header">
+    <img id="logo" src="/static/img/logo.png" class="logo" />
+    <h1>Edit</h1>
+  </div>
+  <br />
+  <section class="post_form">
+    <form
+      action="/edit/{{post.id}}/"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      {% csrf_token %}
+
+      <input
+        class="input"
+        type="text"
+        name="name"
+        placeholder="Name"
+        value="{{post.name}}"
+        required
+      />
+
+      <input
+        class="text1"
+        name="body"
+        placeholder="body"
+        value="{{post.body}}"
+        required
+      />
+      <label for="{{post.name}}"></label>
+      <br />
+
+      <br />
+
+      <input class="inputimage" name="image" type="file" />
+      <div class="tweet">
+        <a
+          class="update-button"
+          href="{% url 'index' %}"
+          style="text-decoration: navy; color: white; background-color: black"
+          >Cancel</a
+        >
+        <input class="update-button" type="submit" value="update" />
+      </div>
+    </form>
+  </section>
+</section>
+{% endblock %}

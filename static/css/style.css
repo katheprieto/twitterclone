@@ -1,0 +1,200 @@
+/*
+Common
+*************************/
+
+html,
+body {
+  height: 100%;
+  padding: 13px;
+  justify-content: center;
+  margin: 0px 102px;
+}
+
+/*
+Main page 
+**********************/
+
+.main {
+  text-align: center;
+}
+
+.main-header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.main .main-header .logo {
+  display: flex;
+  width: 12px;
+  margin-right: 24px;
+}
+
+.ditch {
+  height: 13px;
+  border-top: 1px solid rgb(235, 238, 240);
+  background-color: rgb(247, 248, 248);
+  border-bottom: 1px solid rgb(235, 238, 240);
+}
+
+.content {
+  max-height: 1500px;
+  border-left: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  justify-content: center;
+  padding: 0px 101px;
+}
+
+/* 
+Home
+**************************/
+
+.home .tweet-post {
+  display: flex;
+  padding: 10px;
+}
+
+div.main-header {
+  color: #212529;
+  font: 14px sans-serif;
+  padding: 10px;
+  margin: 8px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgb(235, 238, 240);
+}
+#logo {
+  width: 8%;
+  margin: 12px;
+}
+
+/*
+Post
+**************************/
+
+.post_form {
+  padding: 20px 40px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  width: 86%;
+  justify-content: space-between;
+}
+
+.post_form .user-img {
+  width: 12%;
+}
+
+.post_form form {
+  width: 82%;
+}
+
+.post_form .user-img img {
+  width: 100%;
+  border-radius: 53%;
+}
+
+.post_form input[type="text"] {
+  width: 80%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.post_form input[type="Submit"] {
+  width: 30%;
+  margin-bottom: 14px;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  background-color: #1da1f2;
+  color: #ffffff;
+  font: 15px sans-serif;
+  font-weight: bold;
+}
+
+.post_form textarea {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.post_form form .image-button {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.post_form form .image-button input {
+  width: 40%;
+}
+
+.posts ul {
+  padding: 0;
+}
+
+.posts li {
+  position: relative;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding: 20px 40px;
+  list-style: none;
+}
+
+.posts li .menu_icon {
+  width: 20px;
+  position: absolute;
+  right: 30px;
+  top: 18px;
+}
+
+.posts li .menu {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 15px;
+  border: 1px solid #ccc;
+  background-color: white;
+  padding: 16px 13px;
+  font-size: 13px;
+  border-radius: 3px;
+}
+
+.posts li .menu a {
+  text-decoration: none;
+}
+
+.posts li .logo {
+  flex-basis: 15%;
+}
+
+.posts li .logo img {
+  width: 60%;
+}
+
+.posts li .name_body {
+  flex-basis: 85%;
+}
+
+.posts li .name_body .name {
+  font-weight: bold;
+}
+
+.posts li .name_body .datetime {
+  color: gray;
+}
+
+.posts li .icon-list {
+  display: flex;
+  margin-top: 15px;
+}
+button.like-button {
+  border-style: none;
+  background-color: white;
+}
+.tweet-border {
+  height: 400px;
+  width: 400px;
+}
+@media screen and (max-width: 500px) {
+  .posts li .name_body .name {
+    font-size: 20px;
+  }
+}
