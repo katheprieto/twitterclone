@@ -159,6 +159,7 @@ Post
 
 .posts li .menu a {
   text-decoration: none;
+  color: black;
 }
 
 .posts li .logo {
@@ -192,6 +193,9 @@ button.like-button {
 .tweet-border {
   height: 400px;
   width: 400px;
+}
+.tweet{
+  padding-top: 10%;
 }
 @media screen and (max-width: 500px) {
   .posts li .name_body .name {
