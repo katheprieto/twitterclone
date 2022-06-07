@@ -3,7 +3,7 @@ A sample web page of twitter.
 Let's make simple Twitter. Users can post tweets and see everyone's post.
 To make the project simple, we do not have a sign in/login function.
 So there are no user accounts and follow function.
-Check out [LIVE DEMO here!!](https://twitterclonekatherine.herokuapp.com)
+Check out [LIVE DEMO here!!](https://twitterkat.herokuapp.com)
 
 # Tech used
 * Html
