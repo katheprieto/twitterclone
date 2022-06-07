@@ -28,7 +28,6 @@ img.logo {
   bottom: 10px;
 }
 .posts li .name_body .name {
-  font-weight: bold;
   width: auto;
 }
 .posts li .name_body .datetime {
@@ -213,13 +212,15 @@ textarea {
   width: 15%;
   padding-top: 20px;
 }
+
+
 .posts li .name_body {
   flex-basis: 85%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: medium;
 }
 .posts li .name_body .name {
-  font-weight: bold;
   width: auto;
-  font-family: fantasy;
 }
 .post-border {
   border: 1px solid #ccc;
@@ -233,7 +234,8 @@ textarea {
 @media screen and (max-width: 500px) {
   .posts li .name_body {
     font-size: 20px;
-    font-family: fantasy;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: medium;
   }
 
 
